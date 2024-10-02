@@ -1,0 +1,29 @@
+/* Estilos para asegurar que el cuerpo de la página ocupe toda la ventana del navegador */
+
+body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: flex; /* Usa flexbox para centrar los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura del cuerpo igual a la altura de la ventana */
+    background-color: #f0f0f0; /* Fondo de la página en color gris claro */
+}
+
+/* Contenedor del juego donde el guerrero se moverá */
+#game-container {
+    width: 100%; /* Ancho completo de la ventana */
+    height: 200px; /* Altura fija del área de juego */
+    background-color: #333; /* Color de fondo del área de juego en gris oscuro */
+    position: relative; /* Posiciona a los hijos de este contenedor de manera relativa */
+    overflow: hidden; /* Evita que los elementos hijos se desborden fuera del contenedor */
+}
+
+/* Player representado como un cuadrado rojo */
+#player {
+    width: 40px; /* Ancho del guerrero */
+    height: 40px; /* Altura del guerrero */
+    background-color: rgba(255, 94, 0, 0.753); /* Color del guerrero */
+    position: absolute; /* Permite mover el guerrero dentro del contenedor */
+    bottom: 0; /* Posiciona al guerrero en la parte inferior del contenedor */
+    left: 50px; /* Posiciona al guerrero ligeramente hacia la izquierda en el contenedor */
+}
